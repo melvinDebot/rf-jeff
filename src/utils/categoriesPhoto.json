@@ -2,13 +2,14 @@
   {
     "title" : "Kalash criminel",
     "img":"kalash",
-    "nextLink" : "/desc/kalash"
+    "nextLink" : "/photo/kalash",
+    "altImg" : "rf jeff kalash"
     
   },
   {
     "img" : "noname",
     "title" : "No Name",
-    "nextLink" : "/desc/noname",
-    "next" : "/desc/kalash"
+    "nextLink" : "/photo/noname",
+    "altImg" : "rf jeff noname"
   }
 ]

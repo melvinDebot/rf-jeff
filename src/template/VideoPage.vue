@@ -1,30 +1,19 @@
 <template>
   <div class="wrapper">
-    <div v-for="photo in photos" :key="photo.title">
+    <!-- <div v-for="photo in photos" :key="photo.title">
       <router-link :to="photo.nextLink">
       <div class="wrapper-photo">
-        <img :src="getphotoPath(photo.img)" :alt="photo.altImg" />
+        <img :src="getphotoPath(photo.img)" alt="image" />
         <h3>{{ photo.title }}</h3>
       </div>
       </router-link>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import photos from '@/utils/categoriesPhoto.json'
 export default {
-  name : 'PhotoPage',
-  data(){
-    return {
-      photos : photos
-    }
-  },
-  methods : {
-    getphotoPath(name){
-      return require(`@/photos/${name}/${name}1.jpg`)
-    },
-  }
+  name : 'VideoPage'
 }
 </script>
 
@@ -61,5 +50,3 @@ export default {
     }
   }
 </style>
-
-

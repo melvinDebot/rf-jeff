@@ -1,8 +1,10 @@
 <template>
   <div class="photos">
     <h1>{{ currentImage.title }}</h1>
-    <img :src="getphotoPath(currentImage.imgTwo, 1)" alt="" class="image"/>
-    <img :src="getphotoPath(currentImage.imgTwo, 2)" alt="" class="image"/>
+    <img :src="getphotoPath(currentImage.imgTitle, 1)" :alt="currentImage.altImg" class="image bobo"/>
+    <img :src="getphotoPath(currentImage.imgTitle, 2)" :alt="currentImage.altImg" class="image bobo"/>
+    <img :src="getphotoPath(currentImage.imgTitle, 2)" :alt="currentImage.altImg" class="image bobo"/>
+    <img :src="getphotoPath(currentImage.imgTitle, 2)" :alt="currentImage.altImg" class="image bobo"/>
     <button>
       <router-link :to="currentImage.next">
         <h3>Next : {{ currentImage.titleNext}}</h3>
@@ -14,6 +16,8 @@
 
 <script>
 import descPhoto from '@/utils/descPhoto.json'
+import ScrollReveal from 'scrollreveal'
+
 export default {
   name : 'DescPhoto',
   computed: {
@@ -30,6 +34,9 @@ export default {
     getphotoPath(name, number){
       return require(`@/photos/${name}/${name}${number}.jpg`)
     },
+  },
+  mounted(){
+    ScrollReveal().reveal('.bobo')
   }
 }
 
@@ -58,6 +65,9 @@ export default {
         text-decoration: none;
       }
     }
+  }
+  .reveal{
+  transform: translateY(-50)
   }
 </style>
 

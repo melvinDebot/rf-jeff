@@ -2,17 +2,17 @@
   {
     "route" : "kalash",
     "title" : "Kalash Criminel",
-    "imgOne" : "kalash",
-    "imgTwo" : "kalash",
-    "next" : "/desc/noname",
-    "titleNext" : "No Name"
+    "imgTitle" : "kalash",
+    "next" : "/photo/noname",
+    "titleNext" : "No Name",
+    "altImg" : "rf jeff kalash"
   },
   {
     "route" : "noname",
     "title" : "noname",
-    "imgOne" :"noname",
-    "imgTwo":"noname",
-    "next" : "/desc/kalash",
-    "titleNext" : "Kalash"
+    "imgTitle" :"noname",
+    "next" : "/photo/kalash",
+    "titleNext" : "Kalash",
+    "altImg" : "rf jeff noname"
   }
 ]

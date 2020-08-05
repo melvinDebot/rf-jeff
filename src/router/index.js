@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import PhotoPage from '../template/PhotoPage'
 import DescPhoto from '../template/DescPhoto'
+import VideoPage from '../template/VideoPage'
 
 Vue.use(VueRouter)
 
@@ -18,7 +19,12 @@ Vue.use(VueRouter)
     component : PhotoPage
   },
   {
-    path : '/desc/:name',
+    path:'/videos',
+    name : 'VideoPage',
+    component : VideoPage
+  },
+  {
+    path : '/photo/:name',
     name : 'DescPhoto',
     component : DescPhoto
   },

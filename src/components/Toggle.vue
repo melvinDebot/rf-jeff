@@ -12,21 +12,12 @@
 </template>
 
 <script>
-import MoonDark from "../assets/icons/moon-dark-mode.svg";
-import MoonLight from "../assets/icons/moon-light-mode.svg";
 export default {
   props: ['mode'],
-  components : {
-    MoonDark,
-    MoonLight
-  }
 }
 </script>
 
 <style>
-.toggle-wrapper{
-  
-}
 .toggle {
   position: absolute;
   display: inline-block;
