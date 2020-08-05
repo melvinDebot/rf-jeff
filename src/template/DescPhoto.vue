@@ -3,8 +3,10 @@
     <h1>{{ currentImage.title }}</h1>
     <img :src="getphotoPath(currentImage.imgTitle, 1)" :alt="currentImage.altImg" class="image bobo"/>
     <img :src="getphotoPath(currentImage.imgTitle, 2)" :alt="currentImage.altImg" class="image bobo"/>
-    <img :src="getphotoPath(currentImage.imgTitle, 2)" :alt="currentImage.altImg" class="image bobo"/>
-    <img :src="getphotoPath(currentImage.imgTitle, 2)" :alt="currentImage.altImg" class="image bobo"/>
+    <img :src="getphotoPath(currentImage.imgTitle, 3)" :alt="currentImage.altImg" class="image bobo"/>
+    <img :src="getphotoPath(currentImage.imgTitle, 4)" :alt="currentImage.altImg" class="image bobo"/>
+    <img :src="getphotoPath(currentImage.imgTitle, 5)" :alt="currentImage.altImg" class="image bobo"/>
+    <img :src="getphotoPath(currentImage.imgTitle, 6)" :alt="currentImage.altImg" class="image bobo"/>
     <button>
       <router-link :to="currentImage.next">
         <h3>Next : {{ currentImage.titleNext}}</h3>
@@ -36,7 +38,7 @@ export default {
     },
   },
   mounted(){
-    ScrollReveal().reveal('.bobo')
+    ScrollReveal().reveal('.bobo', { delay: 500 })
   }
 }
 

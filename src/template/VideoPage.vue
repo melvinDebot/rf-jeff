@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <h2>En cours mgl</h2>
     <!-- <div v-for="photo in photos" :key="photo.title">
       <router-link :to="photo.nextLink">
       <div class="wrapper-photo">
