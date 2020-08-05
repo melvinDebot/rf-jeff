@@ -46,8 +46,6 @@ export default {
       const burger = document.querySelector('#nav-icon1')
       nav.classList.toggle('nav-active')
       burger.classList.toggle('open')
-      
-      // burger.classList.toggle('toggle')
     },
 
   },
@@ -57,7 +55,7 @@ export default {
 <style lang="scss" scoped>
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
   
@@ -72,13 +70,14 @@ nav {
     width: 100%;
     z-index: 3;
     li{
-      list-style: none
+      list-style: none;
+      
     }
     a {
       text-decoration: none;
       letter-spacing: 3px;
       font-weight: bold;
-      font-size:14px;
+      font-size: 22px;
     }
   }
   
@@ -105,7 +104,7 @@ nav {
   position: absolute;
   height: 5px;
   width: 100%;
-  background: black;
+  background: lightgreen;
   border-radius: 9px;
   opacity: 1;
   left: 0;

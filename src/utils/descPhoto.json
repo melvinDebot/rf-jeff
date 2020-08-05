@@ -4,12 +4,15 @@
     "title" : "Kalash Criminel",
     "imgOne" : "kalash",
     "imgTwo" : "kalash",
-    "next" : "/desc/niska"
+    "next" : "/desc/noname",
+    "titleNext" : "No Name"
   },
   {
     "route" : "noname",
     "title" : "noname",
-    "imgOne" :"../photos/noname/noname1.jpg",
-    "imgTwo":"../photos/noname/noname1.jpg"
+    "imgOne" :"noname",
+    "imgTwo":"noname",
+    "next" : "/desc/kalash",
+    "titleNext" : "Kalash"
   }
 ]

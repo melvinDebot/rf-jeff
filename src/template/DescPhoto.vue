@@ -3,9 +3,12 @@
     <h1>{{ currentImage.title }}</h1>
     <img :src="getphotoPath(currentImage.imgTwo, 1)" alt="" class="image"/>
     <img :src="getphotoPath(currentImage.imgTwo, 2)" alt="" class="image"/>
-    <router-link :to="currentImage.next">
-      <h3>Suivant</h3>
-    </router-link>
+    <button>
+      <router-link :to="currentImage.next">
+        <h3>Next : {{ currentImage.titleNext}}</h3>
+      </router-link>
+    </button>
+    
   </div>
 </template>
 
@@ -33,6 +36,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
   .photos{
     width: 100%;
     height: auto;
@@ -40,9 +44,19 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     .image {
-      width: 80%;
+      width: 100%;
       margin: 10px 0px;
+    }
+    button{
+      width: 100%;
+      height: 40px;
+      background: black;
+      a{
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 </style>

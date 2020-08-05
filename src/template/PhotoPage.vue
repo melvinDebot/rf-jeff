@@ -43,8 +43,9 @@ export default {
       h3{
         position: relative;
         bottom: 50px;
-        left: 40%;
+        text-align: center;
         color: white;
+        font-size: 22px;
         
       }
     }
@@ -56,7 +57,6 @@ export default {
     h3{
       position: relative;
       bottom: 50px;
-      left: 35%;
       color: white;
     }
   }
