@@ -24,7 +24,6 @@
 </template>
 
 <script>
-import gsap from 'gsap'
 import Toggle from '@/components/Toggle.vue'
 
 export default {
