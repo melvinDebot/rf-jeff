@@ -44,19 +44,29 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 #app {
-  padding: 0 15em;
+  padding: 0 10em;
   width: 100%;
   height: auto;
+  
 }
 .dark {
-  background: #192734;
+  background: black;
   color: #E8E8E8;
 }
 @media only screen and (max-width: 750px){
   #app {
   padding: 0 20px;
   }
+}
+a{
+  color: black
+}
+.dark a {
+  color: white;
 }
 
 

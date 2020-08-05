@@ -2,14 +2,14 @@
   {
     "route" : "kalash",
     "title" : "Kalash Criminel",
-    "imgOne" : "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwNAsaurY4qFTXlH3Ol4TrplZ9zB4Z2fcqiw&usqp=CAU",
-    "imgTwo" : "https://static2.greatsong.net/artiste/276x276/kalash-criminel-99991158069.jpg",
+    "imgOne" : "kalash",
+    "imgTwo" : "kalash",
     "next" : "/desc/niska"
   },
   {
-    "route" : "niska",
-    "title" : "Niska",
-    "imgOne" :"https://yard.media/wp-content/uploads/2017/09/Niska-YARD-Stephanie-Sian-Smith-header2-1.jpg",
-    "imgTwo":"https://cdn.radiofrance.fr/s3/cruiser-production/2020/02/3cb6d08c-303b-489f-9f0d-00b10d652326/1200x680_niska_koria.jpg"
+    "route" : "noname",
+    "title" : "noname",
+    "imgOne" :"../photos/noname/noname1.jpg",
+    "imgTwo":"../photos/noname/noname1.jpg"
   }
 ]

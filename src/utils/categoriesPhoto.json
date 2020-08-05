@@ -1,14 +1,14 @@
 [
   {
     "title" : "Kalash criminel",
-    "img":"https://img.aws.la-croix.com/2018/11/22/1300984898/rapper-francais-Amira-Kiziaminale-alias-Kalash-Criminel-22-novembre-2018-Paris_0_1399_933.jpg",
+    "img":"kalash",
     "nextLink" : "/desc/kalash"
     
   },
   {
-    "img" : "https://img.20mn.fr/XB-GPDlwQyqybWVsfhFe4w/830x532_niska-sort-deuxieme-album-commando.jpg",
-    "title" : "Niska",
-    "nextLink" : "/desc/niska",
+    "img" : "noname",
+    "title" : "No Name",
+    "nextLink" : "/desc/noname",
     "next" : "/desc/kalash"
   }
 ]

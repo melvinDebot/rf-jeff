@@ -1,29 +1,26 @@
 <template>
-  <div class="hello">
-    <router-link to="/photo">Allez sur la page photo</router-link> |
+  <div class="home">
+    <h1>Home</h1>
   </div>
 </template>
 
 <script>
+import DescPhoto from '../template/DescPhoto.vue'
 export default {
   name: 'HelloWorld',
+  components : {
+    DescPhoto
+  }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
+.home {
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
   display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+  justify-content: center;
+
 }
 </style>

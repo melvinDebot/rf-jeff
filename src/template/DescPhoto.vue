@@ -1,10 +1,10 @@
 <template>
   <div class="photos">
     <h1>{{ currentImage.title }}</h1>
-    <img :src="currentImage.imgOne" alt=""/>
-    <img :src="currentImage.imgTwo" alt=""/>
+    <img :src="getphotoPath(currentImage.imgTwo, 1)" alt="" class="image"/>
+    <img :src="getphotoPath(currentImage.imgTwo, 2)" alt="" class="image"/>
     <router-link :to="currentImage.next">
-      <h3>YOOO</h3>
+      <h3>Suivant</h3>
     </router-link>
   </div>
 </template>
@@ -22,19 +22,28 @@ export default {
         (period) => period.route === this.$route.params.name
       )
     }
+  },
+  methods : {
+    getphotoPath(name, number){
+      return require(`@/photos/${name}/${name}${number}.jpg`)
+    },
   }
 }
 
 </script>
 
-<style>
+<style lang="scss" scoped>
   .photos{
     width: 100%;
     height: auto;
-    display: block;
-  }
-  .photos img {
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .image {
+      width: 80%;
+      margin: 10px 0px;
+    }
   }
 </style>
 
