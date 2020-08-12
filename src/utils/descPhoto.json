@@ -19,8 +19,16 @@
     "route" : "lossa",
     "title" : "lossa",
     "imgTitle" :"lossa",
+    "next" : "/photo/mae",
+    "titleNext" : "Mae",
+    "altImg" : "rf jeff photo Lossa"
+  },
+  {
+    "route" : "mae",
+    "title" : "Mae",
+    "imgTitle" :"Mae",
     "next" : "/photo/kalash",
     "titleNext" : "Kalash",
-    "altImg" : "rf jeff photo Lossa"
+    "altImg" : "rf jeff photo Mae"
   }
 ]
