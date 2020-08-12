@@ -53,7 +53,16 @@ export default {
       }
     }
   }
-
+  @media screen and (max-width:768px){
+    .section--contact{
+      height: auto;
+      margin-top: 10%;
+      img{
+        width:80%;
+        margin: 10px 10px;
+      }
+    }
+  }
 </style>
 
 
