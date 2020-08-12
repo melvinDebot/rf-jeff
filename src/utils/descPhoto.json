@@ -5,7 +5,7 @@
     "imgTitle" : "kalash",
     "next" : "/photo/noname",
     "titleNext" : "No Name",
-    "altImg" : "rf jeff kalash"
+    "altImg" : "rf jeff photo kalash"
   },
   {
     "route" : "noname",
@@ -13,6 +13,14 @@
     "imgTitle" :"noname",
     "next" : "/photo/kalash",
     "titleNext" : "Kalash",
-    "altImg" : "rf jeff noname"
+    "altImg" : "rf jeff photo noname"
+  },
+  {
+    "route" : "lossa",
+    "title" : "lossa",
+    "imgTitle" :"lossa",
+    "next" : "/photo/kalash",
+    "titleNext" : "Kalash",
+    "altImg" : "rf jeff photo Lossa"
   }
 ]

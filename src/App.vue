@@ -39,6 +39,7 @@ export default {
 
 
 <style lang="scss" scope="this api replaced by slot-scope in 2.5.0+">
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -51,6 +52,7 @@ body {
   padding: 0 10em;
   width: 100%;
   height: auto;
+  font-family: 'Lato', sans-serif;
   
 }
 .dark {

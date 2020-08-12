@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Contact from '../views/Contact.vue'
 import PhotoPage from '../template/PhotoPage'
 import DescPhoto from '../template/DescPhoto'
 import VideoPage from '../template/VideoPage'
@@ -17,6 +18,11 @@ Vue.use(VueRouter)
     path:'/photo',
     name : 'PhotoPage',
     component : PhotoPage
+  },
+  {
+    path:'/contact',
+    name : 'Contact',
+    component : Contact
   },
   {
     path:'/videos',

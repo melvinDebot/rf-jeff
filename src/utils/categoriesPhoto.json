@@ -10,5 +10,11 @@
     "title" : "No Name",
     "nextLink" : "/photo/noname",
     "altImg" : "rf jeff noname"
+  },
+  {
+    "img" : "lossa",
+    "title" : "Lossa",
+    "nextLink" : "/photo/lossa",
+    "altImg" : "rf jeff lossa"
   }
 ]
