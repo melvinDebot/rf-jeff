@@ -2,7 +2,7 @@
   position: absolute;
   display: inline-block;
   width: 47px;
-  height: 22px;
+  height: 24px;
   left: 86px;
   top: 21px;
 }
@@ -28,21 +28,22 @@
   height: 17px;
   width: 17px;
   left: 3px;
-  bottom: 3px;
+  bottom: 2.7px;
   background: #FFF;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 input:checked + .toggler {
-  background: #2196F3;
+  background: black;
+  border: 1px solid white
 }
 input:focus + toggler {
   box-shadow: 0 0 2px #2196F3;
 }
 input:checked + .toggler:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
 }
 .toggler.round {
   border-radius: 34px;

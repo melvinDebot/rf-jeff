@@ -14,13 +14,17 @@
       </a>
     </div>
     <h3>Frandjylu@gmail.com</h3>
-
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from '../template/Footer.vue'
 export default {
-  name : 'Contact'
+  name : 'Contact',
+  components : {
+    Footer
+  }
 }
 </script>
 

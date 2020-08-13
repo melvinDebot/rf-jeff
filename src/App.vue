@@ -19,6 +19,15 @@ export default {
   created () {
     window.addEventListener('keyup', this.keyPress)
   },
+  mounted(){
+    let body = document.querySelector('body')
+    body.addEventListener('scroll', ()=> {
+      if(body.scrollLeft() !==0){
+        body.scrollLeft(0)
+        console.log(body.scrollLeft())
+      }
+    })
+  },
   methods: {
     keyPress (e) {
       if (e.key === 't') {
@@ -36,8 +45,6 @@ export default {
 }
 </script>
 
-
-
 <style lang="scss" scope="this api replaced by slot-scope in 2.5.0+">
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 * {
@@ -46,14 +53,16 @@ export default {
   box-sizing: border-box;
 }
 
-body, html {
+html {
   overflow-x: hidden;
+  width: 100%;
 }
 #app {
   padding: 0 10em;
   width: 100%;
   height: auto;
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
 }
 .dark {
   background: black;
