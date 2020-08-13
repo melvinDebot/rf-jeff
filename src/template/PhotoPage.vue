@@ -1,12 +1,12 @@
 <template>
   <div class="wrapper">
-    <div v-for="photo in photos" :key="photo.title">
-      <router-link :to="photo.nextLink">
-      <div class="wrapper-photo">
-        <img :src="getphotoPath(photo.img)" :alt="photo.altImg" />
-        <!-- <h3>{{ photo.title }}</h3> -->
-      </div>
-      </router-link>
+    <div
+      v-for="photo in photos"
+      :key="photo.title"
+      class="wrapper-photo"
+      @click="$router.push(photo.nextLink)"
+    >
+      <Picture :alt="photo.altImg" :title="photo.title" :src="getphotoPath(photo.img)" />
     </div>
     <Footer />
   </div>
@@ -15,10 +15,13 @@
 <script>
 import photos from '@/utils/categoriesPhoto.json'
 import Footer from '../template/Footer.vue'
+import Picture from '../template/pictureGarlerie'
+
 export default {
   name : 'PhotoPage',
   components : {
-    Footer
+    Footer,
+    Picture
   },
   data(){
     return {
@@ -34,37 +37,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .wrapper{
-    width: 100%;
-    height: 100%;
-    h2{
-      text-align: center;
-    }
-    .wrapper-photo{
-      margin: 24px 0px;
-      img{
-        width: 100%;
-      }
-      h3{
-        position: relative;
-        bottom: 50px;
-        text-align: center;
-        color: white;
-        font-size: 30px;
-        
-      }
-    }
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  h2 {
+    text-align: center;
   }
-  a{
-    text-decoration: none;
-  }
-  @media screen  and (max-width:768px){
-    h3{
-      position: relative;
-      bottom: 50px;
-      color: white;
-    }
-  }
+}
+
+.wrapper-photo {
+  margin: 0px 0px;
+  width: 300px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
 </style>
 
 
