@@ -1,12 +1,14 @@
 <template>
-  <div class="wrapper">
-    <div
-      v-for="photo in photos"
-      :key="photo.title"
-      class="wrapper-photo"
-      @click="$router.push(photo.nextLink)"
-    >
-      <Picture :alt="photo.altImg" :title="photo.title" :src="getphotoPath(photo.img)" />
+  <div>
+    <div class="wrapper">
+      <div
+        v-for="photo in photos"
+        :key="photo.title"
+        class="wrapper-photo"
+        @click="$router.push(photo.nextLink)"
+      >
+        <Picture :alt="photo.altImg" :title="photo.title" :src="getphotoPath(photo.img)" />
+      </div>
     </div>
     <Footer />
   </div>
