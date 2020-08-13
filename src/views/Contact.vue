@@ -9,7 +9,7 @@
       <a href="https://www.instagram.com/rf_jeff/?hl=fr" target="blank">
         <img src="../assets/icons/instagram.svg" alt="rf jeff instagram"/>
       </a>
-      <a href="https://www.instagram.com/rf_jeff/?hl=fr">
+      <a href="https://www.youtube.com/channel/UC2NrICdg4Tqd3u39unDZLDw?view_as=subscriber" target="blank">
         <img src="../assets/icons/youtube.svg" alt="rf jeff youtube"/>
       </a>
     </div>
