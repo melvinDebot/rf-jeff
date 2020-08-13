@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <h2>En cours mgl</h2>
+    <h2>En cours ...</h2>
     <!-- <div v-for="photo in photos" :key="photo.title">
       <router-link :to="photo.nextLink">
       <div class="wrapper-photo">
@@ -22,6 +22,9 @@ export default {
   .wrapper{
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     h2{
       text-align: center;
     }

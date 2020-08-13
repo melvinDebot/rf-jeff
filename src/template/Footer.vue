@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    Create and Design by <a href="">Melvin Debot</a>
+    Create and Design by <a href="https://www.melvin-debot.com/" target="blank">Melvin Debot</a>
   </div>
 </template>
 

@@ -12,16 +12,21 @@
         <h3>Next : {{ currentImage.titleNext}}</h3>
       </router-link>
     </button>
-    
+    <Footer />
   </div>
 </template>
 
 <script>
 import descPhoto from '@/utils/descPhoto.json'
 import ScrollReveal from 'scrollreveal'
+import Footer from '../template/Footer.vue'
+
 
 export default {
   name : 'DescPhoto',
+  components : {
+    Footer
+  },
   computed: {
     getPhoto(){
       return descPhoto
@@ -69,6 +74,7 @@ export default {
       a{
         color: white;
         text-decoration: none;
+        font-size: 14px;
       }
     }
   }

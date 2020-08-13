@@ -22,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 .home {
   width: 100%;
-  height: auto;
+  height: 100%;
   h1{
     text-align: center;
     margin-bottom: 20px;

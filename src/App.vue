@@ -45,7 +45,8 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-body {
+
+body, html {
   overflow-x: hidden;
 }
 #app {
@@ -53,7 +54,6 @@ body {
   width: 100%;
   height: auto;
   font-family: 'Lato', sans-serif;
-  
 }
 .dark {
   background: black;
@@ -69,6 +69,12 @@ a{
 }
 .dark a {
   color: white;
+}
+#nav-icon1 span{
+  background: black
+}
+.dark #nav-icon1 span{
+  background: white
 }
 
 

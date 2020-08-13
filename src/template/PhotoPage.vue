@@ -36,7 +36,7 @@ export default {
 <style lang="scss" scoped>
   .wrapper{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     h2{
       text-align: center;
     }

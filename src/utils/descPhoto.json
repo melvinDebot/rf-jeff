@@ -9,15 +9,15 @@
   },
   {
     "route" : "noname",
-    "title" : "noname",
+    "title" : "Noname",
     "imgTitle" :"noname",
-    "next" : "/photo/kalash",
-    "titleNext" : "Kalash",
+    "next" : "/photo/lossa",
+    "titleNext" : "Lossa",
     "altImg" : "rf jeff photo noname"
   },
   {
     "route" : "lossa",
-    "title" : "lossa",
+    "title" : "Lossa",
     "imgTitle" :"lossa",
     "next" : "/photo/mae",
     "titleNext" : "Mae",
@@ -26,7 +26,7 @@
   {
     "route" : "mae",
     "title" : "Mae",
-    "imgTitle" :"Mae",
+    "imgTitle" :"mae",
     "next" : "/photo/kalash",
     "titleNext" : "Kalash",
     "altImg" : "rf jeff photo Mae"
