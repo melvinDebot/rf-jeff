@@ -21,6 +21,7 @@ export default {
   border: 1px solid red;
   display: inline-block;
   justify-content: center;
+  
 
 }
 </style>

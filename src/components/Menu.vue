@@ -1,8 +1,6 @@
 <template>
   <nav>
-    <div class="logo">
       <h4>Rf jeff</h4>
-    </div>
     <ul class="nav-link">
       <li><router-link to="/" class="menu__link">Home</router-link> </li>
       <li><router-link to="/photo" class="menu__link">Photos</router-link></li>
@@ -58,26 +56,29 @@ nav {
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
+  padding-top: 15px;
   
-  .logo{
+  h4{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 22px;
+    
   }
   .nav-link{
     display: flex;
-    justify-content: space-around;
+    
+    justify-content: space-evenly;
     width: 100%;
     z-index: 3;
     li{
       list-style: none;
-      
+      align-items: right;
     }
     a {
       text-decoration: none;
       letter-spacing: 3px;
-      font-weight: bold;
-      font-size: 22px;
+      font-weight: 400;
+      font-size: 14px;
     }
   }
   
@@ -171,6 +172,7 @@ nav {
     a {
       color: white;
     }
+    
   }
   #nav-icon1{
     display: block;

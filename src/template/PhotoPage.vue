@@ -4,17 +4,22 @@
       <router-link :to="photo.nextLink">
       <div class="wrapper-photo">
         <img :src="getphotoPath(photo.img)" :alt="photo.altImg" />
-        <h3>{{ photo.title }}</h3>
+        <!-- <h3>{{ photo.title }}</h3> -->
       </div>
       </router-link>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import photos from '@/utils/categoriesPhoto.json'
+import Footer from '../template/Footer.vue'
 export default {
   name : 'PhotoPage',
+  components : {
+    Footer
+  },
   data(){
     return {
       photos : photos
@@ -36,7 +41,7 @@ export default {
       text-align: center;
     }
     .wrapper-photo{
-      margin: 10px 0px;
+      margin: 24px 0px;
       img{
         width: 100%;
       }

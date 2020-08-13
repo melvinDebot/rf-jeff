@@ -70,4 +70,10 @@ input:checked + .toggler:before {
 .toggler.round:before {
   border-radius: 50%;
 }
+@media screen  and (max-width:768px){
+  .toggle{
+    left: 50%;
+    transform: translateX(-50%)
+  }
+}
 </style>

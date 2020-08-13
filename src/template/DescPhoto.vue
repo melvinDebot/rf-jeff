@@ -53,6 +53,10 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h1{
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
     
     .image {
       width: 100%;
@@ -60,7 +64,7 @@ export default {
     }
     button{
       width: 100%;
-      height: 40px;
+      height: 70px;
       background: black;
       a{
         color: white;

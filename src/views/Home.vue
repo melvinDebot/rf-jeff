@@ -2,16 +2,19 @@
   <div class="home">
     <h1>Home</h1>
     <PhotoPage />
+    <Footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import PhotoPage from '../template/PhotoPage.vue'
+
 export default {
   name: 'Home',
   components: {
-    PhotoPage
+    PhotoPage,
+    
   }
 }
 </script>
@@ -22,6 +25,7 @@ export default {
   height: auto;
   h1{
     text-align: center;
+    margin-bottom: 20px;
   }
 }
 </style>

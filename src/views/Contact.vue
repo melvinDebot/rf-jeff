@@ -33,7 +33,7 @@ export default {
     justify-content: space-evenly;
     align-items: center;
     h2{
-      font-size: 22px;
+      font-size: 32px;
     }
     .section--text{
       margin-top: 20px;
