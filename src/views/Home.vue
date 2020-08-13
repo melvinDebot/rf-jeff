@@ -9,12 +9,15 @@
 <script>
 // @ is an alias to /src
 import PhotoPage from '../template/PhotoPage.vue'
+import gsap from 'gsap'
 
 export default {
   name: 'Home',
   components: {
     PhotoPage,
-    
+  },
+  beforeCreate(){
+
   }
 }
 </script>

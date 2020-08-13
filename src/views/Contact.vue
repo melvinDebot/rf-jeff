@@ -6,14 +6,14 @@
     Ce que nous aimons le plus c’est de sortir de l’ordinaire en sortant de notre zone de confort même a essayer différents styles pour que notre travail soit à chaque fois quelques choses de différents </p>
     <h3>Contact</h3>
     <div class="section--reseaux">
-      <a href="https://www.instagram.com/rf_jeff/?hl=fr">
+      <a href="https://www.instagram.com/rf_jeff/?hl=fr" target="blank">
         <img src="../assets/icons/instagram.svg" alt="rf jeff instagram"/>
       </a>
       <a href="https://www.instagram.com/rf_jeff/?hl=fr">
         <img src="../assets/icons/youtube.svg" alt="rf jeff youtube"/>
       </a>
     </div>
-    <p>Frandjylu@gmail.com</p>
+    <h3>Frandjylu@gmail.com</h3>
 
   </div>
 </template>
