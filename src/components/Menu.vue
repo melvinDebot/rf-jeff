@@ -1,8 +1,9 @@
 <template>
   <nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
+      <a class="uk-navbar-item uk-logo" href="#">RFJEFF</a>
       <ul class="uk-navbar-nav">
-        <li class="uk-active">
+        <li>
           <router-link to="/" class="menu__link">Home</router-link>
         </li>
         <li>
@@ -10,6 +11,9 @@
         </li>
         <li>
           <router-link to="/videos" class="menu__link">Vidéos</router-link>
+        </li>
+        <li>
+          <router-link to="/contact" class="menu__link">Contact</router-link>
         </li>
       </ul>
     </div>

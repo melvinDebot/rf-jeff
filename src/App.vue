@@ -58,7 +58,7 @@ html {
   width: 100%;
 }
 #app {
-  padding: 0 10em;
+  padding: 0 5em;
   width: 100%;
   height: auto;
   font-family: "Lato", sans-serif;
