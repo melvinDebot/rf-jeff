@@ -8,32 +8,27 @@
 
 <script>
 // @ is an alias to /src
-import PhotoPage from '../template/PhotoPage.vue'
-import gsap from 'gsap'
+import PhotoPage from "../template/PhotoPage.vue";
+import gsap from "gsap";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     PhotoPage,
   },
-  beforeCreate(){
-
-  }
-}
+  beforeCreate() {},
+};
 </script>
 
 <style lang="scss" scoped>
 .home {
   width: 100%;
   height: 100%;
-  h1{
+  h1 {
     text-align: center;
     margin-bottom: 20px;
   }
 }
 </style>
 
-
-<style scoped>
-
-</style>
+<style scoped></style>

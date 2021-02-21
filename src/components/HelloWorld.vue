@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import DescPhoto from '../template/DescPhoto.vue'
+import DescPhoto from "../template/DescPhoto.vue";
 export default {
-  name: 'HelloWorld',
-  components : {
-    DescPhoto
-  }
-}
+  name: "HelloWorld",
+  components: {
+    DescPhoto,
+  },
+};
 </script>
 
 <style scoped>
@@ -21,7 +21,5 @@ export default {
   border: 1px solid red;
   display: inline-block;
   justify-content: center;
-  
-
 }
 </style>

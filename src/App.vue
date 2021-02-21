@@ -1,52 +1,52 @@
 <template>
   <div id="app" :class="mode">
-    <Menu :mode="mode" @toggle="toggle"/>
-    <router-view/>
+    <Menu :mode="mode" @toggle="toggle" />
+    <router-view />
   </div>
 </template>
 <script>
-import Menu from './components/Menu.vue'
+import Menu from "./components/Menu.vue";
 export default {
-  name: 'app',
-  data () {
+  name: "app",
+  data() {
     return {
-      mode: 'light'
-    }
+      mode: "light",
+    };
   },
   components: {
     Menu,
   },
-  created () {
-    window.addEventListener('keyup', this.keyPress)
+  created() {
+    window.addEventListener("keyup", this.keyPress);
   },
-  mounted(){
-    let body = document.querySelector('body')
-    body.addEventListener('scroll', ()=> {
-      if(body.scrollLeft() !==0){
-        body.scrollLeft(0)
-        console.log(body.scrollLeft())
+  mounted() {
+    let body = document.querySelector("body");
+    body.addEventListener("scroll", () => {
+      if (body.scrollLeft() !== 0) {
+        body.scrollLeft(0);
+        console.log(body.scrollLeft());
       }
-    })
+    });
   },
   methods: {
-    keyPress (e) {
-      if (e.key === 't') {
-        this.toggle()
+    keyPress(e) {
+      if (e.key === "t") {
+        this.toggle();
       }
     },
-    toggle () {
+    toggle() {
       if (this.mode === "dark") {
-        this.mode = "light"
+        this.mode = "light";
       } else {
-        this.mode = "dark"
+        this.mode = "dark";
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss" scope="this api replaced by slot-scope in 2.5.0+">
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -61,33 +61,30 @@ html {
   padding: 0 10em;
   width: 100%;
   height: auto;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   overflow-x: hidden;
 }
 .dark {
   background: black;
-  color: #E8E8E8;
+  color: #e8e8e8;
 }
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 750px) {
   #app {
-  padding: 0 20px;
+    padding: 0 20px;
   }
 }
-a{
-  color: black
+a {
+  color: black;
 }
 .dark a {
   color: white;
 }
-#nav-icon1 span{
-  background: black
+#nav-icon1 span {
+  background: black;
 }
-.dark #nav-icon1 span{
-  background: white
+.dark #nav-icon1 span {
+  background: white;
 }
-
-
-
 
 #nav a.router-link-exact-active {
   color: #42b983;

@@ -1,26 +1,26 @@
 [
   {
-    "title" : "Kalash criminel",
-    "img":"kalash",
-    "nextLink" : "/photo/kalash",
-    "altImg" : "rf jeff kalash"
+    "title": "Kalash criminel",
+    "img": "kalash",
+    "nextLink": "/photo/kalash",
+    "altImg": "rf jeff kalash"
   },
   {
-    "img" : "noname",
-    "title" : "No Name",
-    "nextLink" : "/photo/noname",
-    "altImg" : "rf jeff noname"
+    "img": "noname",
+    "title": "No Name",
+    "nextLink": "/photo/noname",
+    "altImg": "rf jeff noname"
   },
   {
-    "img" : "lossa",
-    "title" : "Lossa",
-    "nextLink" : "/photo/lossa",
-    "altImg" : "rf jeff lossa"
+    "img": "lossa",
+    "title": "Lossa",
+    "nextLink": "/photo/lossa",
+    "altImg": "rf jeff lossa"
   },
   {
-    "img" : "mae",
-    "title" : "Mae",
-    "nextLink" : "/photo/mae",
-    "altImg" : "rf jeff Mae"
+    "img": "mae",
+    "title": "Mae",
+    "nextLink": "/photo/mae",
+    "altImg": "rf jeff Mae"
   }
 ]

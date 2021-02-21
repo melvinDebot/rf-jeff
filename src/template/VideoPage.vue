@@ -14,43 +14,42 @@
 
 <script>
 export default {
-  name : 'VideoPage'
-}
+  name: "VideoPage",
+};
 </script>
 
 <style lang="scss" scoped>
-  .wrapper{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h2{
-      text-align: center;
-    }
-    .wrapper-photo{
-      margin: 10px 0px;
-      img{
-        width: 100%;
-      }
-      h3{
-        position: relative;
-        bottom: 50px;
-        text-align: center;
-        color: white;
-        font-size: 22px;
-        
-      }
-    }
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    text-align: center;
   }
-  a{
-    text-decoration: none;
-  }
-  @media screen  and (max-width:768px){
-    h3{
+  .wrapper-photo {
+    margin: 10px 0px;
+    img {
+      width: 100%;
+    }
+    h3 {
       position: relative;
       bottom: 50px;
+      text-align: center;
       color: white;
+      font-size: 22px;
     }
   }
+}
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    position: relative;
+    bottom: 50px;
+    color: white;
+  }
+}
 </style>

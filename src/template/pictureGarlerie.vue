@@ -1,35 +1,35 @@
 <template>
-  <div @mouseover="hover = true" @mouseleave="hover = false" class="picture-warpper">
+  <div
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    class="picture-warpper"
+  >
     <img :src="src" :alt="alt" />
-    <div class="overlay" :class="{ active : hover }">
+    <div class="overlay" :class="{ active: hover }">
       <h3>{{ title }}</h3>
     </div>
   </div>
 </template>
 
-
 <script>
-
 export default {
-  name : 'PictureMainGalerie',
-  data (){
+  name: "PictureMainGalerie",
+  data() {
     return {
-      hover : false,
-    }
+      hover: false,
+    };
   },
-  props : {
-    src : {},
+  props: {
+    src: {},
     alt: {
       type: String,
     },
-    title : {
-      type : String,
-    }
-  }
-}
-
+    title: {
+      type: String,
+    },
+  },
+};
 </script>
-
 
 <style lang="scss" scoped>
 .picture-warpper {

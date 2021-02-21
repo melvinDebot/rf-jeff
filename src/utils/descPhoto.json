@@ -1,34 +1,34 @@
 [
   {
-    "route" : "kalash",
-    "title" : "Kalash Criminel",
-    "imgTitle" : "kalash",
-    "next" : "/photo/noname",
-    "titleNext" : "No Name",
-    "altImg" : "rf jeff photo kalash"
+    "route": "kalash",
+    "title": "Kalash Criminel",
+    "imgTitle": "kalash",
+    "next": "/photo/noname",
+    "titleNext": "No Name",
+    "altImg": "rf jeff photo kalash"
   },
   {
-    "route" : "noname",
-    "title" : "Noname",
-    "imgTitle" :"noname",
-    "next" : "/photo/lossa",
-    "titleNext" : "Lossa",
-    "altImg" : "rf jeff photo noname"
+    "route": "noname",
+    "title": "Noname",
+    "imgTitle": "noname",
+    "next": "/photo/lossa",
+    "titleNext": "Lossa",
+    "altImg": "rf jeff photo noname"
   },
   {
-    "route" : "lossa",
-    "title" : "Lossa",
-    "imgTitle" :"lossa",
-    "next" : "/photo/mae",
-    "titleNext" : "Mae",
-    "altImg" : "rf jeff photo Lossa"
+    "route": "lossa",
+    "title": "Lossa",
+    "imgTitle": "lossa",
+    "next": "/photo/mae",
+    "titleNext": "Mae",
+    "altImg": "rf jeff photo Lossa"
   },
   {
-    "route" : "mae",
-    "title" : "Mae",
-    "imgTitle" :"mae",
-    "next" : "/photo/kalash",
-    "titleNext" : "Kalash",
-    "altImg" : "rf jeff photo Mae"
+    "route": "mae",
+    "title": "Mae",
+    "imgTitle": "mae",
+    "next": "/photo/kalash",
+    "titleNext": "Kalash",
+    "altImg": "rf jeff photo Mae"
   }
 ]

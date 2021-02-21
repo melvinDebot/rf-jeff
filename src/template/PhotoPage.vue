@@ -7,7 +7,11 @@
         class="wrapper-photo"
         @click="$router.push(photo.nextLink)"
       >
-        <Picture :alt="photo.altImg" :title="photo.title" :src="getphotoPath(photo.img)" />
+        <Picture
+          :alt="photo.altImg"
+          :title="photo.title"
+          :src="getphotoPath(photo.img)"
+        />
       </div>
     </div>
     <Footer />
@@ -15,27 +19,27 @@
 </template>
 
 <script>
-import photos from '@/utils/categoriesPhoto.json'
-import Footer from '../template/Footer.vue'
-import Picture from '../template/pictureGarlerie'
+import photos from "@/utils/categoriesPhoto.json";
+import Footer from "../template/Footer.vue";
+import Picture from "../template/pictureGarlerie";
 
 export default {
-  name : 'PhotoPage',
-  components : {
+  name: "PhotoPage",
+  components: {
     Footer,
-    Picture
+    Picture,
   },
-  data(){
+  data() {
     return {
-      photos : photos
-    }
+      photos: photos,
+    };
   },
-  methods : {
-    getphotoPath(name){
-      return require(`@/photos/${name}/${name}1.jpg`)
+  methods: {
+    getphotoPath(name) {
+      return require(`@/photos/${name}/${name}1.jpg`);
     },
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -59,5 +63,3 @@ a {
   text-decoration: none;
 }
 </style>
-
-

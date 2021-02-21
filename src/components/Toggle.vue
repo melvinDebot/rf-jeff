@@ -1,9 +1,9 @@
 <template>
   <div class="toggle-wrapper">
     <label class="toggle">
-      <input 
-        type="checkbox" 
-        :checked="(mode === 'dark') ? 'checked' : false" 
+      <input
+        type="checkbox"
+        :checked="mode === 'dark' ? 'checked' : false"
         @change="$emit('toggle')"
       />
       <span class="toggler round"></span>
@@ -13,10 +13,10 @@
 
 <script>
 export default {
-  props: ['mode'],
-}
+  props: ["mode"],
+};
 </script>
 
 <style>
-@import '../styles/Toggle.scss';
+@import "../styles/Toggle.scss";
 </style>
