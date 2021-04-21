@@ -1,65 +1,81 @@
 <template>
-  <div>
-    <div class="wrapper">
-      <div
-        v-for="photo in photos"
-        :key="photo.title"
-        class="wrapper-photo"
-        @click="$router.push(photo.nextLink)"
+  <div class="section--contact">
+    <h2>Sur nous</h2>
+    <img src="../assets/icons/rfjeff-img.png" alt="rf jeff" />
+    <p class="section--text">
+      Nous sommes deux personnes passionnées par la vidéo et la photographie
+      nous voulons vous partager nos créations et notre univers tout en essayant
+      de captiver la jeunesse a travers l’art visuel. Ce que nous aimons le plus
+      c’est de sortir de l’ordinaire en sortant de notre zone de confort même a
+      essayer différents styles pour que notre travail soit à chaque fois
+      quelques choses de différents
+    </p>
+    <h3>Contact</h3>
+    <div class="section--reseaux">
+      <a href="https://www.instagram.com/rf_jeff/?hl=fr" target="blank">
+        <img src="../assets/icons/instagram.svg" alt="rf jeff instagram" />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UC2NrICdg4Tqd3u39unDZLDw?view_as=subscriber"
+        target="blank"
       >
-        <Picture
-          :alt="photo.altImg"
-          :title="photo.title"
-          :src="getphotoPath(photo.img)"
-        />
-      </div>
+        <img src="../assets/icons/youtube.svg" alt="rf jeff youtube" />
+      </a>
     </div>
+    <h3>Frandjylu@gmail.com</h3>
     <Footer />
   </div>
 </template>
 
 <script>
-import photos from "@/utils/categoriesPhoto.json";
 import Footer from "../template/Footer.vue";
-import Picture from "../template/pictureGarlerie";
-
 export default {
-  name: "PhotoPage",
+  name: "Contact",
   components: {
     Footer,
-    Picture,
-  },
-  data() {
-    return {
-      photos: photos,
-    };
-  },
-  methods: {
-    getphotoPath(name) {
-      return require(`@/photos/${name}/${name}1.jpg`);
-    },
   },
 };
 </script>
 
-<style lang="scss" scoped>
-.wrapper {
+<style lang="scss">
+.section--contact {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   h2 {
-    text-align: center;
+    font-size: 32px;
+    margin-bottom: 22px;
+  }
+  .section--text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .section--reseaux {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0px;
+    img {
+      width: 40px;
+    }
   }
 }
-
-.wrapper-photo {
-  margin: 0px 0px;
-  width: 300px;
-  position: relative;
-}
-
-a {
-  text-decoration: none;
+@media screen and (max-width: 768px) {
+  .section--contact {
+    height: auto;
+    margin-top: 10%;
+    img {
+      width: 80%;
+      margin: 10px 10px;
+    }
+  }
 }
 </style>

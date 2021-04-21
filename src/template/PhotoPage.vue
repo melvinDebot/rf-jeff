@@ -1,21 +1,18 @@
 <template>
-  <div >
+  <div>
     <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
-      <div
-          v-for="photo in photos"
-          :key="photo.title">
-        <div 
-          class="uk-card uk-card-default uk-card-body uk-background-cover uk-padding-remove" 
+      <div v-for="photo in photos" :key="photo.title">
+        <div
+          class="uk-card uk-card-default uk-card-body uk-background-cover uk-padding-remove"
           @click="$router.push(photo.nextLink)"
         >
           <Picture
-          :alt="photo.altImg"
-          :title="photo.title"
-          :src="getphotoPath(photo.img)"
-        />
+            :alt="photo.altImg"
+            :title="photo.title"
+            :src="getphotoPath(photo.img)"
+          />
         </div>
       </div>
-    
     </div>
     <Footer />
   </div>
@@ -55,5 +52,4 @@ export default {
     text-align: center;
   }
 }
-
 </style>

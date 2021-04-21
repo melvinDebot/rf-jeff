@@ -1,29 +1,43 @@
 <template>
-  <div class="section--contact">
-    <h2>Sur nous</h2>
-    <img src="../assets/icons/rfjeff-img.png" alt="rf jeff" />
-    <p class="section--text">
-      Nous sommes deux personnes passionnées par la vidéo et la photographie
-      nous voulons vous partager nos créations et notre univers tout en essayant
-      de captiver la jeunesse a travers l’art visuel. Ce que nous aimons le plus
-      c’est de sortir de l’ordinaire en sortant de notre zone de confort même a
-      essayer différents styles pour que notre travail soit à chaque fois
-      quelques choses de différents
-    </p>
-    <h3>Contact</h3>
-    <div class="section--reseaux">
-      <a href="https://www.instagram.com/rf_jeff/?hl=fr" target="blank">
-        <img src="../assets/icons/instagram.svg" alt="rf jeff instagram" />
-      </a>
-      <a
-        href="https://www.youtube.com/channel/UC2NrICdg4Tqd3u39unDZLDw?view_as=subscriber"
-        target="blank"
-      >
-        <img src="../assets/icons/youtube.svg" alt="rf jeff youtube" />
-      </a>
+  <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+    <div class="uk-grid flex">
+      <div class="uk-width-medium-2-3 uk-row-first">
+        <div class="uk-panel uk-panel-header">
+          <h3 class="uk-panel-title">Contact Me</h3>
+          <form class="uk-form uk-form-stacked">
+            <div class="uk-form-row">
+              <label class="uk-form-label">Your name</label>
+              <div class="uk-form-controls">
+                <input type="text" placeholder="text enter" class="uk-width-1-1 height-size-input"/>
+              </div>
+            </div>
+            <div class="uk-form-row">
+              <label class="uk-form-label">Your email</label>
+              <div class="uk-form-controls">
+                <input type="mail" placeholder="text mail" class="uk-width-1-1 height-size-input"/>
+              </div>
+            </div>
+            <div class="uk-form-row">
+              <label class="uk-form-label">Your message</label>
+              <div class="uk-form-controls">
+                <textarea placeholder="text enter" class="uk-width-1-1" cols="100" row="9"/>
+              </div>
+            </div>
+            <div class="uk-form-row">
+              <div class="uk-form-controls">
+                <button class="uuk-button uk-button-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="uk-width-medium-1-3">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+          <h3 class="uk-panel-title">Contact details</h3>
+
+        </div>
+      </div>
     </div>
-    <h3>Frandjylu@gmail.com</h3>
-    <Footer />
   </div>
 </template>
 
@@ -38,44 +52,7 @@ export default {
 </script>
 
 <style lang="scss">
-.section--contact {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  h2 {
-    font-size: 32px;
-    margin-bottom: 22px;
-  }
-  .section--text {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  p {
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .section--reseaux {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 14px 0px;
-    img {
-      width: 40px;
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  .section--contact {
-    height: auto;
-    margin-top: 10%;
-    img {
-      width: 80%;
-      margin: 10px 10px;
-    }
-  }
+.height-size-input{
+  height: 40px;
 }
 </style>
