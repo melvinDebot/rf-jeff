@@ -4,32 +4,32 @@
     <img
       :src="getphotoPath(currentImage.imgTitle, 1)"
       :alt="currentImage.altImg"
-      class="image bobo"
+      class="image rfjeff"
     />
     <img
       :src="getphotoPath(currentImage.imgTitle, 2)"
       :alt="currentImage.altImg"
-      class="image bobo"
+      class="image rf jeff"
     />
     <img
       :src="getphotoPath(currentImage.imgTitle, 3)"
       :alt="currentImage.altImg"
-      class="image bobo"
+      class="image rf jeff"
     />
     <img
       :src="getphotoPath(currentImage.imgTitle, 4)"
       :alt="currentImage.altImg"
-      class="image bobo"
+      class="image rf jeff"
     />
     <img
       :src="getphotoPath(currentImage.imgTitle, 5)"
       :alt="currentImage.altImg"
-      class="image bobo"
+      class="image rfjeff"
     />
     <img
       :src="getphotoPath(currentImage.imgTitle, 6)"
       :alt="currentImage.altImg"
-      class="image bobo"
+      class="image rf jeff"
     />
     <button @click="goToTheTop()">
       <router-link :to="currentImage.next">
